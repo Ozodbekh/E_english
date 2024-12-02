@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-English Platformasi</title>
+    <link rel="stylesheet" href="{% static 'apps/css/styles.css' %}">
+</head>
+<body>
+<header class="header">
+    <div class="logo-container">
+        <img src="{% static 'apps/images/logo.png' %}" alt="e-English logotipi" class="logo">
+        <nav class="nav">
+            <a href="#">Essential</a>
+            <a href="#">O'yinlar</a>
+            <a href="#">Testlar</a>
+        </nav>
+        <div class="dropdown">
+            <button class="dropdown-btn">Account</button>
+            <div class="dropdown-content">
+                <a href="{% url 'login' %}">Login</a>
+                <a href="{% url 'email' %}">Register</a>
+            </div>
+        </div>
+
+
+    </div>
+
+</header>
+
+<main>
+    <section class="section">
+        <img src="{% static "apps/images/welcome.png" %}" alt="Ingliz tilini o'rganing" class="section-image">
+        <h2>Ingliz tilini biz bilan o'rganing</h2>
+        <p>It is a simple platform which helps you to improve your English with interesting games, word tasks, and
+            tests.</p>
+        <button>Boshlash</button>
+    </section>
+
+    <section class="section">
+        <img src="{% static "apps/images/vocabulary.png" %}" alt="So'z boyligi" class="section-image">
+        <h3>Essentials</h3>
+        <h2>So'z boyligini oshiring !!!</h2>
+        <p>Ushbu bo'limda siz Essential boblarini o'z ichiga olgan qiziqarli topshiriqlar bilan so'z boyligingizni
+            oshirasiz.</p>
+        <button>O'tish</button>
+    </section>
+
+    <section class="section">
+        <img src="{% static "apps/images/games.png" %}" alt="O'yinlar" class="section-image">
+        <h3>Games</h3>
+        <h2>O'yin o'ynab o'rganish ?</h2>
+        <p>Bizning qiziqarli o'yinlarimiz bilan bilimingizni oshiring va vaqtni maroqli o'tkazing!</p>
+        <button>O'tish</button>
+    </section>
+
+    <section class="section">
+        <img src="{% static "apps/images/test.png" %}" alt="Test" class="section-image">
+        <h3>Test</h3>
+        <h2>Bilimingizni tekshiring</h2>
+        <p>Ingliz tilidagi bilimlaringizni test orqali aniqlang!</p>
+        <button>O'tish</button>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="contact">
+        <p>Bog'lanish: mukhtardev579@gmail.com</p>
+    </div>
+    <nav>
+        <a href="#">Asosiy</a>
+        <a href="#">Essential</a>
+        <a href="#">O'yinlar</a>
+    </nav>
+</footer>
+</body>
+</html>

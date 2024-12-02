@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="{% static 'apps/css/login.css' %}">
+</head>
+<body>
+<div class="login-container">
+    <form method="post">
+        {% csrf_token %}
+        <h2>Ro'yxatdan o'tish</h2>
+        <input type="email" name="email" placeholder="E-pochta" required>
+        <button type="submit">Tasdiqlash</button>
+    </form>
+</div>
+</body>
+</html>

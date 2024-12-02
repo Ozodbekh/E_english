@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="{% static 'apps/css/login.css' %}">
+</head>
+<body>
+<div class="login-container">
+    <form action="{% url 'verify' %}" method="post">
+        {% csrf_token %}
+        <h2>Ro'yhatdan o'tish</h2>
+        <h5>{{ email }} pochtasiga jo'natilgan kodni kiriting ! Code ni kiritish mudati 1 minute</h5>
+        <div id="timer">00:05</div>
+        {% if messages %}
+            {% for message in messages %}
+                <h5 style="color: red; text-align: center">{{ message }}</h5>
+            {% endfor %}
+        {% endif %}
+        <input name="code" placeholder="Kodni kiriting" required>
+        <a id="resendButton" href="#" style="text-align: right; display: block">Qayta kodni yuborish</a>
+        <input name="email" hidden="hidden" value="{{ email }}">
+        <button type="submit">Tasdiqlash</button>
+
+    </form>
+</div>
+<script src="{% static 'apps/js/script.js' %}"></script>
+</body>
+
+</html>
+
+

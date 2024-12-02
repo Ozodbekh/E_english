@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.logo-container {
+  display: flex;
+  align-items: normal;
+  justify-content: left;
+  gap: 30px;
+}
+
+.logo {
+  width: 170px;
+  height: 45px;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.header {
+  background: #80ff66;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav {
+  margin: 10px 0;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.login-btn {
+  background: #ff66c4; /* Pushti fon */
+  color: #fff; /* Oq matn */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background: #e055b3; /* Hover holatida quyuqroq pushti */
+}
+
+/* Ro'yhatdan o'tish tugmasi uchun CSS */
+.register-btn {
+  background: #007bff; /* Moviy fon */
+  color: #fff; /* Oq matn */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 10px;
+  margin-left: 10px; /* Tugmalar orasida bo'sh joy */
+  transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+  background: #0056b3; /* Hover holatida quyuqroq moviy */
+}
+
+main {
+  padding: 20px;
+}
+
+.section {
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.section h2 {
+  margin: 10px 0;
+  color: #007bff;
+}
+
+.section img {
+  width: 100%;
+  max-width: 150px;
+  margin: 0 auto 15px;
+  display: block;
+}
+
+.section button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background: #007bff;
+  color: #fff;
+}
+
+.footer nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Dropdown konteyner */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdownni ochuvchi tugma */
+.dropdown-btn {
+  background: #007bff; /* Moviy fon */
+  color: #fff; /* Oq matn */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-btn:hover {
+  background: #0056b3; /* Hover holatida quyuqroq moviy */
+}
+
+/* Dropdown tarkibi (boshida yashirin bo'ladi) */
+.dropdown-content {
+  display: none; /* Yashirin holat */
+  position: absolute;
+  background-color: #f9f9f9; /* Oq fon */
+  min-width: 150px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+/* Dropdown tarkibidagi havolalar */
+.dropdown-content a {
+  color: #333; /* Matn rangi */
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1; /* Hover holatida kulrang fon */
+}
+
+/* Hover qilinganda dropdownni ko'rsatish */
+.dropdown:hover .dropdown-content {
+  display: block;
+}

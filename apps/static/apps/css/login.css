@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0fff4; /* Light green background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #ccffcc; /* Slightly darker green card */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px; /* Adjust width as necessary */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Aligns children (inputs, button) centrally */
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.login-container input {
+    width: calc(100% - 20px); /* Subtracting padding from total width */
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff; /* White background for input */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.login-container button {
+    width: calc(100% - 20px); /* Adjust button width to fit within the container */
+    padding: 10px;
+    margin-top: 10px; /* Adds margin above the button */
+    border: none;
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.login-container button:hover {
+    background-color: #45a049;
+}
+
+#timer {
+    font-size: 3rem;
+    color: #333;
+}
+
+.password-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.password-container input {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+}
+
+.password-container .icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.password-container .icon:hover {
+    color: #0056b3;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
